@@ -77,4 +77,3 @@ services:
       - discountdb
     ports:
       - "8002:80"
-
