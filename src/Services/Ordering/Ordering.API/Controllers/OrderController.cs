@@ -24,7 +24,7 @@ namespace Ordering.API.Controllers
         }
 
 
-        [HttpGet("{username}", Name = "GetOrder")]
+        [HttpGet("{userName}", Name = "GetOrder")]
         [ProducesResponseType(typeof(IEnumerable<OrdersVm>), (int)HttpStatusCode.OK)]
         public async Task<ActionResult<IEnumerable<OrdersVm>>> GetOrdersByUserName(string userName)
         {
