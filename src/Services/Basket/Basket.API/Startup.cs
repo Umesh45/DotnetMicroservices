@@ -36,6 +36,7 @@ namespace Basket.API
             services.AddScoped<DiscountGrpcService>();
 
             services.AddScoped<IBasketRepository, BasketRepository>();
+            services.AddAutoMapper(typeof(Startup));
 
             // MassTransit-RabbitMQ Configuration
             services.AddMassTransit(config =>
